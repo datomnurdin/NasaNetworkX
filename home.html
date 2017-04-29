@@ -49,6 +49,36 @@
   stroke: #2ca02c;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+li {
+  border-bottom: 1px solid #ccc;
+}
+ 
+li:last-child {
+  border: none;
+}
+ 
+li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+li a:hover {
+  background: #f6f6f6;
+}
+
 </style>
 <body>
 <div style="float: left;" id="graph">
@@ -56,14 +86,13 @@
 <div style="float: left;">
 <h1 style="margin-right: 10px; font: 300 15px 'Helvetica Neue', Helvetica, Arial, sans-serif;">Space Cluster</h1>
 <span style="font-size: 10px;">32000 metadata datasets supported.</span>
-<fieldset style="width: 300px; margin-bottom: 10px;">
+<fieldset style="width: 350px; margin-bottom: 10px; ">
   <input type="text" name="keyword" placeholder="Keyword">
   <button type="button">Search</button>
 </fieldset>
 
-<fieldset style="height: 600px;">
-  <ol>
-    <li id="description"></li>
+<fieldset style="width: 350px; height: 600px; overflow: auto;">
+  <ol id="description" style="font: 300 9px 'Helvetica Neue', Helvetica, Arial, sans-serif;">
   </ol>
 </fieldset>
 </div>
@@ -73,7 +102,8 @@
   
 $.getJSON('data.json', { get_param: 'value' }, function(data) {
     $.each(data.dataset, function(index, element) {
-        console.log(element['description']);
+        content = '<li><a href=' + element['distribution'][0]['downloadURL'] + ' target="_blank">' + element['title'] + '<br>' + element['description'].substring(0,90) + '</a></li>';
+        $(content).appendTo("#description");
     });
 });
 
