@@ -79,15 +79,19 @@ li a:hover {
   background: #f6f6f6;
 }
 
+.notify{
+    border: 1px solid red;
+}
+
 </style>
 <body>
 <div style="float: left;" id="graph">
 </div>
 <div style="float: left;">
-<h1 style="margin-right: 10px; font: 300 15px 'Helvetica Neue', Helvetica, Arial, sans-serif;">Space Cluster</h1>
+<h1 style="margin-right: 10px; font: 300 30px 'Helvetica Neue', Helvetica, Arial, sans-serif;">Space Cluster</h1>
 <span style="font-size: 10px;">32000 metadata <a href="https://data.nasa.gov/" target="_blank">NASA datasets</a> supported. Why Space Cluster <a href="https://www.dropbox.com/s/mvhc8g3czqzdyui/SpaceCluster.pdf" target="_blank">?</a></span>
 <fieldset style="width: 350px; margin-bottom: 10px; border: 1px solid #ccc;">
-  <input type="text" name="keyword" placeholder="Keyword">
+  <input type="text" name="search" id="search" placeholder="Keyword">
   <button type="button">Search</button>
 </fieldset>
 
@@ -105,6 +109,16 @@ $.getJSON('data.json', { get_param: 'value' }, function(data) {
         content = '<li><a href=' + element['distribution'][0]['downloadURL'] + ' target="_blank">' + element['title'] + '<br>' + element['description'].substring(0,90) + '</a></li>';
         $(content).appendTo("#description");
     });
+});
+
+$('#search').change(function () {
+    var yourtext = $(this).val();
+    if (yourtext.length > 0) {
+        $("li:contains(" + yourtext + ")").addClass('notify');
+    }
+    else{
+        $("li:contains(" + yourtext + ")").removeClass('notify');
+    }
 });
 
 </script>
