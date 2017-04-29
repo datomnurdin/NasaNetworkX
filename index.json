@@ -84,7 +84,7 @@
 {"name": "root.south", "imports": []},
 {"name": "root.terra", "imports": []},
 {"name": "root.eos", "imports": []},
-{"name": "root.Topic 6", "imports": ["root.system","root.fault","root.technology","root.phase","root.high","root.model","root.paper","root.approach","root.using","root.component","root.proposed","root.performance","root.used","root.health","root.based","root.control","root.algorithm","root.result","root.process","root.development"]},
+{"name": "root.scientific research", "imports": ["root.system","root.fault","root.technology","root.phase","root.high","root.model","root.paper","root.approach","root.using","root.component","root.proposed","root.performance","root.used","root.health","root.based","root.control","root.algorithm","root.result","root.process","root.development"]},
 {"name": "root.pass", "imports": []},
 {"name": "root.am", "imports": []},
 {"name": "root.land", "imports": []},
