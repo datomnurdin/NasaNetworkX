@@ -62,15 +62,26 @@
 </fieldset>
 
 <fieldset style="height: 600px;">
-  
-
+  <ol>
+    <li id="description"></li>
+  </ol>
 </fieldset>
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  
+$.getJSON('data.json', { get_param: 'value' }, function(data) {
+    $.each(data.dataset, function(index, element) {
+        console.log(element['description']);
+    });
+});
+
+</script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
-var diameter = 960,
+var diameter = 850,
     radius = diameter / 2,
     innerRadius = radius - 120;
 
