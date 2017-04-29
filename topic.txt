@@ -1,0 +1,15 @@
+[(0, u'0.099*"data" + 0.044*"seawifs" + 0.033*"product" + 0.027*"algorithm" + 0.019*"412" + 0.018*"global" + 0.017*"low" + 0.015*"sensor" + 0.014*"ocean" + 0.012*"available" + 0.011*"cloud" + 0.010*"wind" + 0.010*"equatorial" + 0.010*"ssmi" + 0.009*"water" + 0.009*"ssmis" + 0.009*"science" + 0.009*"rain" + 0.009*"nasa" + 0.009*"center"'), 
+
+(1, u'0.023*"km" + 0.020*"mission" + 0.020*"collected" + 0.019*"local" + 0.018*"prognostic" + 0.018*"instrument" + 0.017*"1997" + 0.016*"time" + 0.015*"satellite" + 0.015*"launched" + 0.015*"oct" + 0.014*"adeos" + 0.014*"august" + 0.014*"orbit" + 0.013*"descending" + 0.013*"tilt" + 0.013*"resolution" + 0.013*"crossing" + 0.012*"design" + 0.012*"space"'), 
+
+(2, u'0.020*"power" + 0.015*"data" + 0.011*"prediction" + 0.010*"device" + 0.010*"system" + 0.008*"nasa" + 0.008*"diagnostic" + 0.007*"due" + 0.007*"tom" + 0.006*"building" + 0.006*"size" + 0.006*"surface" + 0.005*"demonstrated" + 0.005*"solution" + 0.005*"element" + 0.005*"pressure" + 0.005*"using" + 0.005*"engine" + 0.005*"particle" + 0.005*"precision"'), 
+
+(3, u'0.034*"data" + 0.014*"set" + 0.009*"soil" + 0.008*"area" + 0.008*"file" + 0.007*"model" + 0.007*"study" + 0.006*"validation" + 0.006*"measurement" + 0.006*"useful" + 0.006*"framework" + 0.005*"site" + 0.005*"moisture" + 0.005*"estimate" + 0.005*"experiment" + 0.005*"information" + 0.005*"image" + 0.005*"collected" + 0.004*"contains" + 0.004*"water"'), 
+
+(4, u'0.053*"modis" + 0.032*"global" + 0.031*"earth" + 0.031*"aqua" + 0.024*"equator" + 0.022*"data" + 0.021*"north" + 0.021*"south" + 0.021*"terra" + 0.021*"eos" + 0.021*"pass" + 0.012*"am" + 0.011*"land" + 0.011*"model" + 0.011*"1" + 0.011*"ocean" + 0.011*"resolution" + 0.011*"surface" + 0.011*"dynamic" + 0.011*"spectral"'), 
+
+(5, u'0.022*"system" + 0.007*"fault" + 0.007*"technology" + 0.007*"phase" + 0.005*"high" + 0.005*"model" + 0.005*"paper" + 0.005*"approach" + 0.005*"using" + 0.005*"component" + 0.005*"proposed" + 0.005*"performance" + 0.005*"used" + 0.005*"health" + 0.005*"based" + 0.004*"control" + 0.004*"algorithm" + 0.004*"result" + 0.004*"process" + 0.004*"development"'), 
+
+(6, u'0.046*"data" + 0.025*"product" + 0.017*"file" + 0.012*"level" + 0.009*"version" + 0.009*"surface" + 0.008*"parameter" + 0.008*"grid" + 0.008*"day" + 0.008*"temperature" + 0.008*"contains" + 0.007*"format" + 0.007*"field" + 0.007*"set" + 0.007*"3" + 0.007*"standard" + 0.007*"precipitation" + 0.006*"resolution" + 0.006*"orbit" + 0.006*"profile"'), 
+
+(7, u'0.053*"band" + 0.031*"color" + 0.030*"nm" + 0.025*"ocean" + 0.021*"spectral" + 0.018*"optimized" + 0.015*"range" + 0.015*"dynamic" + 0.014*"instrument" + 0.013*"land" + 0.012*"czcs" + 0.012*"spacecraft" + 0.011*"measurement" + 0.010*"broadcast" + 0.010*"scanner" + 0.010*"seastar" + 0.009*"thermal" + 0.009*"used" + 0.009*"aerosol" + 0.009*"first"')]
